@@ -74,7 +74,7 @@ function desplazarContenidoCarta(scrollPos) {
     // Comprobamos si la carta ha alcanzado su posición final
     if (cartaFinalTop === -550 && scrollPos > 500) {
         // Activamos el desplazamiento del contenido de la carta
-        var translateY = (scrollPos - 500) * -1.8; // Incrementamos la proporción del desplazamiento
+        var translateY = (scrollPos - 500) * -1.9; // Incrementamos la proporción del desplazamiento
 
         if (translateY < -scrollRange) {
             translateY = -scrollRange; // Evita que el contenido se desplace más allá del final
