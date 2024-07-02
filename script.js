@@ -30,7 +30,7 @@ $(window).scroll(function () {
     }
 
     // Sobre trasladoY / carta
-    if (scr >= 500) {
+    if (scr >= 300) {
         E.css({
             'transition': 'all .5s 1s',
             'top': '-550px',
@@ -44,7 +44,7 @@ $(window).scroll(function () {
             'transition': 'all 1s',
             'transform': 'rotateZ(180deg)'
         });
-    } else if (scr <= 500) {
+    } else if (scr <= 300) {
         E.css({
             'transition': 'all .5s',
             'top': '3px',
