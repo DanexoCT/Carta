@@ -72,9 +72,9 @@ function desplazarContenidoCarta(scrollPos) {
     var cartaFinalTop = parseInt(carta.css('top'), 10); // Convertimos el valor 'top' de la carta a número
 
     // Comprobamos si la carta ha alcanzado su posición final
-    if (cartaFinalTop === -550 && scrollPos > 500) {
+    if (cartaFinalTop === -550 && scrollPos > 300) {
         // Activamos el desplazamiento del contenido de la carta
-        var translateY = (scrollPos - 500) * -1.5; // Incrementamos la proporción del desplazamiento
+        var translateY = (scrollPos - 300) * -1.5; // Incrementamos la proporción del desplazamiento
 
         if (translateY < -scrollRange) {
             translateY = -scrollRange; // Evita que el contenido se desplace más allá del final
@@ -84,7 +84,7 @@ function desplazarContenidoCarta(scrollPos) {
             'transform': 'translateY(' + translateY + 'px)',
             'transition': 'transform 0.2s ease-out'
         });
-    } else if (scrollPos <= 500) {
+    } else if (scrollPos <= 300) {
         cartaContent.css({
             'transform': 'translateY(0px)',
             'transition': 'transform 0.2s ease-out'
