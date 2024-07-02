@@ -68,7 +68,7 @@ function desplazarContenidoCarta(scrollPos) {
     var cartaContent = $('#carta p');
     var cartaHeight = carta.height();
     var contentHeight = cartaContent.height();
-    var scrollRange = (contentHeight - cartaHeight); // Incrementamos el rango de desplazamiento
+    var scrollRange = (contentHeight - cartaHeight) * 2; // Incrementamos el rango de desplazamiento
     var cartaFinalTop = parseInt(carta.css('top'), 10); // Convertimos el valor 'top' de la carta a número
 
     // Comprobamos si la carta ha alcanzado su posición final
