@@ -91,5 +91,3 @@ function desplazarContenidoCarta(scrollPos) {
         });
     }
 }
-
-asdasd
